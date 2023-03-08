@@ -1,31 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <h1>DONEC JUSTO EGET</h1>
+      <h2>FELIS FACILISIS FERMENTUM</h2>
+      <h3>ALIQUAM PORTTITOR MAURIS SIT AMET ORCI</h3>
+      <h4>AENEAN DIGNISSIM PELLENTESQUE FELIS</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+        hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
+        vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
+        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
+        nibh. Nullam mollis. Ut justo. Suspendisse potenti.Sed egestas, ante et
+        vulputate volutpat, eros pede semper est, vitae luctus metus libero eu
+        augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida
+        id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper
+        lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque
+        euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu,
+        dapibus eu, fermentum et, dapibus sed, urna. Morbi interdum mollis
+        sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet,
+        lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed
+        vel lacus.
       </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
