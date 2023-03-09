@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
 
-  const [mobileview, setMobileView] = useState
+  const [mobileview, setMobileView] = useState(null)
 
   return (
     <div className="App">

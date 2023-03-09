@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
-    color: white;
     background-color: black;
 }
 
@@ -24,6 +23,12 @@
 .navbar-heading h2, .navbar-list ul li {
     text-transform: uppercase;
 }
+
+.navbar-heading h2 a, .navbar-list ul li a{
+    text-decoration: none;
+    color: white
+}
+
 
 .navbar-list ul{
     list-style: none;
