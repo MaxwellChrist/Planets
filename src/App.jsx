@@ -6,7 +6,11 @@ import "./App.css";
 
 function App() {
 
-  const [mobileview, setMobileView] = useState(null)
+  // const [mobileview, setMobileView] = useState(window.innerWidth)
+
+  // useEffect(() => {
+  //   window.addEventListener("resize")
+  // })
 
   return (
     <div className="App">
