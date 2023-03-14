@@ -107,6 +107,7 @@
         height: 2em;
         width: 2em;
         color: var(--dark-grey);
+        cursor: pointer;
     }
     .navbar-heading, .navbar-list {
         width: 90%;
