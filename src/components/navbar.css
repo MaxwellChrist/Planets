@@ -8,6 +8,7 @@
 
 .navbar-heading {
     width: calc(40% - 40px);
+    /* border-bottom: 1px solid var(--dark-grey); */
 }
 
 #navbar-icon {
@@ -110,16 +111,37 @@
         color: var(--dark-grey);
     }
     .navbar-heading {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
     .navbar-heading h2 {
         text-align: center;
     }
     .navbar-list {
-        display: none;
+        width: 100%;
+    }
+    .navbar-list ul {
+        display: grid;
+        width: 100%;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 1fr;
+    }
+    .navbar-list ul li {
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        height: 50px;
+    }
+    .svgCircle {
+        padding-right: 10px;
+        justify-self: start;
+    }
+    .navbar-list ul li a{
+        justify-self: start;
+    }
+    .svgArrow {
+        justify-self: end;
     }
 }
