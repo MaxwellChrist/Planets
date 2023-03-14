@@ -18,9 +18,15 @@ export default function Navbar() {
   };
 
   const toggleMobileViewActiveNavbar = {
+    borderBottom: (!hamburgerActive && width <= 600) || width > 600 ? "1px solid rgba(151, 151, 151, 0.2)" : "unset",
+  };
+
+  const toggleMobileViewActiveNavbarList = {
     display:
       (hamburgerActive && width <= 600) || width > 600 ? "block" : "none",
+      borderTop: hamburgerActive && width <= 600 ? "1px solid rgba(151, 151, 151, 0.2)" : "unset",
   };
+
 
   const toggleMobileViewActiveSVG = {
     display: hamburgerActive && width <= 600 ? "inline" : "none",
@@ -34,52 +40,52 @@ export default function Navbar() {
   return (
     <>
       <header>
-        <nav className="navbar">
+        <nav className="navbar" style={toggleMobileViewActiveNavbar}>
           <div className="navbar-heading">
             <h2>
               <Link to="/">The Planets</Link>
             </h2>
             <GiHamburgerMenu id="navbar-icon" onClick={handleClick} />
           </div>
-          <div className="navbar-list" style={toggleMobileViewActiveNavbar}>
+          <div className="navbar-list" style={toggleMobileViewActiveNavbarList}>
             <ul>
               <li>
-                <BsFillCircleFill className="svgCircle" style={toggleMobileViewActiveSVG} />
+                <BsFillCircleFill id="mercury" className="svgCircle" style={toggleMobileViewActiveSVG} />
                 <Link to="/mercury">Mercury</Link>
                 <SlArrowRight className="svgArrow" style={toggleMobileViewActiveSVG} />
               </li>
               <li>
-                <BsFillCircleFill className="svgCircle" style={toggleMobileViewActiveSVG} />
+                <BsFillCircleFill id="venus" className="svgCircle" style={toggleMobileViewActiveSVG} />
                 <Link to="/venus">Venus</Link>
                 <SlArrowRight className="svgArrow" style={toggleMobileViewActiveSVG} />
               </li>
               <li>
-                <BsFillCircleFill className="svgCircle" style={toggleMobileViewActiveSVG} />
+                <BsFillCircleFill id="earth" className="svgCircle" style={toggleMobileViewActiveSVG} />
                 <Link to="/earth">Earth</Link>
                 <SlArrowRight className="svgArrow" style={toggleMobileViewActiveSVG} />
               </li>
               <li>
-                <BsFillCircleFill className="svgCircle" style={toggleMobileViewActiveSVG} />
+                <BsFillCircleFill id="mars" className="svgCircle" style={toggleMobileViewActiveSVG} />
                 <Link to="/mars">Mars</Link>
                 <SlArrowRight className="svgArrow" style={toggleMobileViewActiveSVG} />
               </li>
               <li>
-                <BsFillCircleFill className="svgCircle" style={toggleMobileViewActiveSVG} />
+                <BsFillCircleFill id="jupiter" className="svgCircle" style={toggleMobileViewActiveSVG} />
                 <Link to="/jupiter">Jupiter</Link>
                 <SlArrowRight className="svgArrow" style={toggleMobileViewActiveSVG} />
               </li>
               <li>
-                <BsFillCircleFill className="svgCircle" style={toggleMobileViewActiveSVG} />
+                <BsFillCircleFill id="saturn" className="svgCircle" style={toggleMobileViewActiveSVG} />
                 <Link to="/saturn">Saturn</Link>
                 <SlArrowRight className="svgArrow" style={toggleMobileViewActiveSVG} />
               </li>
               <li>
-                <BsFillCircleFill className="svgCircle" style={toggleMobileViewActiveSVG} />
+                <BsFillCircleFill id="uranus" className="svgCircle" style={toggleMobileViewActiveSVG} />
                 <Link to="/uranus">Uranus</Link>
                 <SlArrowRight className="svgArrow" style={toggleMobileViewActiveSVG} />
               </li>
               <li>
-                <BsFillCircleFill className="svgCircle" style={toggleMobileViewActiveSVG} />
+                <BsFillCircleFill id="neptune" className="svgCircle" style={toggleMobileViewActiveSVG} />
                 <Link to="/neptune">Neptune</Link>
                 <SlArrowRight className="svgArrow" style={toggleMobileViewActiveSVG} />
               </li>

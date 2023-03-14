@@ -2,13 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid rgba(151, 151, 151, 0.2);
+}
+
+.navbar-heading, .navbar-list {
     padding: 20px 40px;
-    background-color: black;
 }
 
 .navbar-heading {
     width: calc(40% - 40px);
-    /* border-bottom: 1px solid var(--dark-grey); */
 }
 
 #navbar-icon {
@@ -17,6 +20,7 @@
 
 .navbar-list {
     width: calc(60% - 40px);
+    height: 100%;
 }
 
 .navbar-heading h2 {
@@ -55,11 +59,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .navbar {
-        background-color: green;
-        padding: 20px
-    }
-
     .navbar-heading h2 {
         font-size: 25px;
     }
@@ -79,7 +78,6 @@
 
 @media screen and (max-width: 800px) {
     .navbar {
-        background-color: red;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
@@ -100,28 +98,32 @@
 
 @media screen and (max-width: 600px) {
     .navbar {
-        background-color: teal;
         flex-direction: column;
         justify-content: center;
         gap: 0;
     }
     #navbar-icon {
         display: inline-block;
-        height: 32px;
+        height: 2em;
+        width: 2em;
         color: var(--dark-grey);
     }
-    .navbar-heading {
-        width: 100%;
+    .navbar-heading, .navbar-list {
+        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 20px;
+        padding: 20px;
+    }
+
+    .navbar-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
     }
     .navbar-heading h2 {
         text-align: center;
-    }
-    .navbar-list {
-        width: 100%;
     }
     .navbar-list ul {
         display: grid;
@@ -133,15 +135,47 @@
         display: grid;
         grid-template-columns: 5% 1fr 5%;
         height: 50px;
+        align-content: center;  
     }
     .svgCircle {
         padding-right: 10px;
         justify-self: start;
+        width: 75%;
+        height: 75%;
     }
     .navbar-list ul li a{
         justify-self: start;
+        font-size: 25px;
+    }
+    .navbar-list ul li:not(:last-child) {
+        border-bottom: 2px solid rgba(151, 151, 151, 0.1);
     }
     .svgArrow {
         justify-self: end;
+        color: rgba(151, 151, 151, 1);
+    }
+    #mercury {
+        color: var(--mercury);
+    }
+    #venus {
+        color: var(--venus);
+    }
+    #earth {
+        color: var(--earth);
+    }
+    #mars {
+        color: var(--mars);
+    }
+    #jupiter {
+        color: var(--jupiter);
+    }
+    #saturn {
+        color: var(--saturn);
+    }
+    #uranus {
+        color: var(--uranus);
+    }
+    #neptune {
+        color: var(--neptune);
     }
 }
