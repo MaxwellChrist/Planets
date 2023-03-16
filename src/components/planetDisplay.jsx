@@ -2,12 +2,10 @@ import "./planetDisplay.css";
 import { useState, useEffect } from "react";
 import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
 
-// Planet SVGs
-import { ReactComponent as Earth1 } from "../assets/planets-fact-site/starter-code/assets/planet-earth.svg";
+const svgPath = '/src/components'
 
 export default function PlanetDisplay({ data }) {
-  const startSvgPath = '../assets/planets-fact-site/starter-code'
-  const [planetImage, setPlanetImage] = useState(data.images.planet);
+  const [planetImage, setPlanetImage] = useState(svgPath + data.images.planet);
 
   useEffect(() => {
     console.log(data.images.planet)
@@ -17,7 +15,7 @@ export default function PlanetDisplay({ data }) {
     <>
       <section>
         <div className="planet-image-container">
-          <Earth1 className="planet-image" style={{'src': startSvgPath + data.images.planet}} />
+         <img className="planet-image" src={planetImage} />
         </div>
         <div className="planet-content-container">
           <h1>{data.name}</h1>

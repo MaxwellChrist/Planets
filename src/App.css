@@ -4,7 +4,7 @@
     position: fixed; 
     top: 0; 
     left: 0; 
-    background: url('./assets/planets-fact-site/starter-code/assets/background-stars.svg') no-repeat center center fixed var(--black);
+    background: url('./components/assets/background-stars.svg') no-repeat center center fixed var(--black);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
